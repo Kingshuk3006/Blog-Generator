@@ -1,0 +1,20 @@
+<%- include('partials/header'); -%>
+
+    <form action="/compose" method="post" class="flex flex-col items-center" autocomplete="off">
+        <label class="compose flex flex-col justify-center mt-4 w-full" for="input">
+            <h1 class="text-2xl font-semibold p-4">Tittle</h1>
+            <input type="text" placeholder="Compose" class="px-8 py-4 border-2 border-teal-500 rounded w-full focus:outline-none"
+                name="textTittle">
+            <h1 class="text-2xl font-semibold p-4">Post</h1>
+            <textarea type="text" placeholder="Your Area..."
+                class="px-8 py-4 border-2 border-teal-500 rounded w-full focus:outline-none" name="textBody" rows="5"></textarea>
+        </label>
+        <button class="text-xl font-semibold bg-teal-500 text-white p-4 rounded focus:outline-0 m-4"
+            type="submit">Publish</button>
+    </form>
+
+
+    </div>
+
+    <%- include('partials/footer'); -%>
+

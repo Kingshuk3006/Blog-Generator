@@ -1,0 +1,21 @@
+<%- include('partials/header'); -%>
+
+    <h1 class="text-3xl my-4 font-bold">
+        <%=heading%>
+    </h1>
+    <p class="text-md my-4">
+        <%=content%>
+    </p>
+
+    <% posts.forEach(function(post){%>
+        <h1 class="text-3xl my-4 font-semibold">
+            <%= post.textTittle %>
+        </h1>
+        <p class="text-md my-4">
+            <%= post.textBody.substring(0, 100) + "...." %>
+            <a href="/posts/<%=post.textTittle%>" class="text-blue-500 underline">Read More</a>
+        </p>
+        <%}) %>
+            </div>
+
+            <%- include('partials/footer'); -%>
